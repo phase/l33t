@@ -2,10 +2,11 @@ var bestScore = 10.0;
 
 function submitForm(){
   var form = document.forms[0];
-  
+  console.log(form);
   var sum = 0.0;
   
   for(var i = 0; i < form.length; i++){
+    console.log(form[i]);
     sum += getRadioCheckedValue(form[i].name);
   }
   
