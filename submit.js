@@ -20,7 +20,7 @@ function getRadioCheckedValue(radio_name){
  for(var i = 0; i < oRadio.length; i++){
 
    if(oRadio[i].checked){
-         console.log(oRadio[i].value);
+         console.log(radio_name);
          return parseFloat(oRadio[i].value);
    }
  }
