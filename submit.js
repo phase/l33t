@@ -6,7 +6,7 @@ function submitForm(){
   var sum = 0.0;
   
   for(var i = 0; i < form.length; i++){
-    sum += getRadioCheckedValue(form[i].name
+    sum += getRadioCheckedValue(form[i].name);
   }
   
   
