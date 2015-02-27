@@ -16,11 +16,11 @@ function submitForm(){
 function getRadioCheckedValue(radio_name){
 
  var oRadio = document.forms[0].elements[radio_name];
- 
+ console.log(radio_name);
  for(var i = 0; i < oRadio.length; i++){
 
    if(oRadio[i].checked){
-         console.log(radio_name);
+         
          return parseFloat(oRadio[i].value);
    }
  }
