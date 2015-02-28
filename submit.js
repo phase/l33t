@@ -7,7 +7,7 @@ for(var i = 0; i < form.length; i += 4){
   alert(radio);
   var highestRadioScore = 0.0;
   for(var j = 0; j < radio.length; j++){
-    var radioScore = parseFloat(radio[i].value);
+    var radioScore = parseFloat(radio[j].value);
     if(highestRadioScore < radioScore){
       highestRadioScore = radioScore;
     }
