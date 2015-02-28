@@ -1,4 +1,4 @@
-var bestScore = 0;
+var bestScore = 0.0;
 
 $(document).ready(function(){
 alert("Ready");
@@ -6,6 +6,7 @@ var form = document.forms[0];
 
 for(var i = 0; i < form.length; i += 4){
   var radio = document.getElementsByName(form[i].name);
+  alert(radio);
   var highestRadioScore = 0.0;
   for(var j = 0; j < radio.length; j++){
     var radioScore = parseFloat(radio[i].value);
