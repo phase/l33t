@@ -10,7 +10,7 @@ function submitForm(){
     sum += getRadioCheckedValue(form[i].name);
   }
   
-  alert("Your Score: " + sum/bestScore);
+  alert("Your Score: " + sum);
   
 }
 
