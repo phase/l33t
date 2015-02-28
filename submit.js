@@ -16,12 +16,9 @@ function submitForm(){
 }
 
 function getRadioCheckedValue(form, radio_name){
-
- var oRadio = form[radio_name];
+ var oRadio = document.getElementsByName(radio_name);
  console.log(radio_name);
- alert(oRadio.length);
  for(var i = 0; i < oRadio.length; i++){
-
    if(oRadio[i].checked){
          console.log(oRadio[i]);
          console.log(oRadio[i].value);
