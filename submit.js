@@ -27,7 +27,7 @@ function submitForm(){
     sum+=v;
   }
   
-  alert("Your Score: " + ((sum/bestScore)*100) + "%");
+  alert("Your Score: " + parseInt(((sum/bestScore)*100)) + "%");
   
 }
 
