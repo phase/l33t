@@ -6,7 +6,7 @@ function submitForm(){
   var sum = 0.0;
   
   for(var i = 0; i < form.length; i+=4){
-    var v = getRadioCheckedValue(form[i].name);
+    var v = getRadioCheckedValue(form, form[i].name);
     //alert(form[i].name +": "+ v);
     sum+=v;
   }
@@ -15,9 +15,9 @@ function submitForm(){
   
 }
 
-function getRadioCheckedValue(radio_name){
+function getRadioCheckedValue(form, radio_name){
 
- var oRadio = document.forms[0].elements[radio_name];
+ var oRadio = form[radio_name];
  console.log(radio_name);
  alert(oRadio.length);
  for(var i = 0; i < oRadio.length; i++){
