@@ -1,6 +1,7 @@
 var bestScore = 0;
 
 $(document).ready(function(){
+alert("Ready");
 var form = document.forms[0];
 
 for(var i = 0; i < form.length; i += 4){
