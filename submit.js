@@ -2,7 +2,7 @@ var bestScore = 0.0;
 
 $(document).ready(function(){
 var form = document.forms[0];
-aler(form.length);
+aler("Fl: "+form.length);
 for(var i = 0; i < form.length; i += 4){
   var radio = document.getElementsByName(form[i].name);
   alert(radio);
