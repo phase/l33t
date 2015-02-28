@@ -8,6 +8,7 @@ function submitForm(){
   for(var i = 0; i < form.length; i++){
     console.log(form[i]);
     sum += getRadioCheckedValue(form[i].name);
+    alert(form[i].name);
   }
   
   alert("Your Score: " + sum);
