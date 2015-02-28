@@ -11,7 +11,7 @@ function submitForm(){
     sum+=v;
   }
   
-  alert("Your Score: " + sum);
+  alert("Your Score: " + (sum/bestScore) + "%");
   
 }
 
