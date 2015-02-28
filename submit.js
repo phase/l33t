@@ -5,10 +5,9 @@ function submitForm(){
   console.log(form);
   var sum = 0.0;
   
-  for(var i = 0; i < form.length; i++){
+  for(var i = 0; i < form.length; i+=4){
     console.log(form[i]);
     sum += getRadioCheckedValue(form[i].name);
-    alert(form[i].name);
   }
   
   alert("Your Score: " + sum);
