@@ -1,4 +1,4 @@
-var bestScore = 10.0;
+var bestScore = 205.0;
 
 function submitForm(){
   var form = document.forms[0];
