@@ -1,3 +1,7 @@
+$.get("http://jdf2.org/phaseViewCount/index.php", function(count){
+  $("#hitcount").html(count);
+});
+
 var bestScore = 0.0;
 
 $(document).ready(function(){
