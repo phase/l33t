@@ -4,3 +4,21 @@ body{
   font-family: 'Open Sans', sans-serif;
   background-color: #F5F5DC;
 }
+
+a {
+  transition: color .4s;
+  color: #265C83;
+  text-decoration: none;
+}
+
+a:link,
+a:visited { color: #265C83; }
+a:hover   { color: #7FDBFF; }
+a:active  {
+  transition: color .3s;
+  color: #007BE6;
+}
+
+.copyleft{
+  font-size: .5em;
+}
