@@ -6,6 +6,15 @@ var bestScore = 0.0;
 
 $(document).ready(function(){
 var form = document.forms[0];
+
+$(".question").toArray().forEach(function(element, index, array) {
+  $(element).hide(100);
+});
+
+for(var i = 0; i < 10; i++){
+var r = Math.floor((Math.random() * 10) + 1);
+
+}
 for(var i = 0; i < form.length; i += 4){
   var radio = document.getElementsByName(form[i].name);
   var highestRadioScore = 0.0;
@@ -46,4 +55,12 @@ function getRadioCheckedValue(form, radio_name){
    }
  }
  return 0;
+}
+
+function showRandom(var i){
+ $(".question").eq(i-1).show(100);
+}
+
+function isHidden(var i){
+  return $(".question").eq(i-1).css('display') == 'none';
 }
