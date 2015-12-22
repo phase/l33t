@@ -12,10 +12,10 @@ $(".question").toArray().forEach(function(element, index, array) {
 });
 
 for(var i = 0; i < 10; i++){
-var r = Math.floor((Math.random() * 10) + 1);
-
+  showRandom();
 }
 for(var i = 0; i < form.length; i += 4){
+  if(isHidden(i/4 + 1)) continue;
   var radio = document.getElementsByName(form[i].name);
   var highestRadioScore = 0.0;
   for(var j = 0; j < radio.length; j++){
@@ -57,8 +57,10 @@ function getRadioCheckedValue(form, radio_name){
  return 0;
 }
 
-function showRandom(i){
- $(".question").eq(i-1).show(100);
+function showRandom(){
+ var r = Math.floor((Math.random() * 10) + 1);
+ if(isHidden(r)) showRandom();
+ else $(".question").eq(r-1).show(100);
 }
 
 function isHidden(i){
