@@ -57,10 +57,10 @@ function getRadioCheckedValue(form, radio_name){
  return 0;
 }
 
-function showRandom(var i){
+function showRandom(i){
  $(".question").eq(i-1).show(100);
 }
 
-function isHidden(var i){
+function isHidden(i){
   return $(".question").eq(i-1).css('display') == 'none';
 }
